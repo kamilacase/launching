@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,4FAA4F",
+"sources": ["scss/launching_page.scss"],
+"names": [],
+"file": "launching_page.css"
+}
