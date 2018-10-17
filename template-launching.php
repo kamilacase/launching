@@ -41,7 +41,33 @@ Template Post Type: post, page, product
 				<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque non aliquid tempora corporis, dolorum aspernatur incidunt totam esse dolore ad, atque praesentium quia culpa excepturi, facilis alias consequatur asperiores.</p>
 				<p class="text">bla bla codi n camp</p>
 
-				<button class="btn btn-danger" type="submit">Notify me</button>
+			
+				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+ Notify me
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+		<form action="." method="post">
+      		<div class="modal-body">
+				<input type="email" name="email" id="email" placeholder="votre email ici">
+		   	</div>
+		   	<div class="modal-footer">
+			   	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   	<button type="submit" class="btn btn-primary">Envoyer </button>
+			</div>
+		</form>
+    </div>
+  </div>
+</div>
 				<button type="button" class="btn btn-outline-light">About us</button>
 
                 <ul class="social-network">
