@@ -991,4 +991,12 @@ body {
   background-attachment: fixed;
 }
 
+.social-network {
+  list-style: none;
+}
+.social-network > li {
+  font-size: 3rem;
+  display: inline;
+}
+
 /*# sourceMappingURL=style.css.map */
