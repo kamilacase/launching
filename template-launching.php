@@ -41,7 +41,7 @@ Template Post Type: post, page, product
 				<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque non aliquid tempora corporis, dolorum aspernatur incidunt totam esse dolore ad, atque praesentium quia culpa excepturi, facilis alias consequatur asperiores.</p>
 				<p class="text">bla bla codi n camp</p>
 
-			
+
 				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
  Notify me
 </button>
@@ -56,16 +56,19 @@ Template Post Type: post, page, product
 		  <span aria-hidden="true">&times;</span>
 		</button>
 	</div>
-		<form action="." method="post">
-      		<div class="modal-body">
-				<input type="email" name="email" id="email" placeholder="votre email ici">
-		   	</div>
-		   	<div class="modal-footer">
-			   	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			   	<button type="submit" class="btn btn-primary">Envoyer </button>
-			</div>
-		</form>
+    <form action="" method="post">
+        <p>
+            <div class="modal-body">
+                <label for="zero_newsletter_email">Votre email :</label>
+                <input id="zero_newsletter_email" name="zero_newsletter_email" type="email"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Envoyer </button>
+            </div>
+        </p>
     </div>
+    </form>
   </div>
 </div>
 				<button type="button" class="btn btn-outline-light">About us</button>
