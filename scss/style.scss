@@ -1,15 +1,25 @@
 @import "theme";
 
 main.launching {
-    position: absolute;
+
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('http://iwallpapers2.free.fr/images/Paysages/Hiver/Glace_bleu_-_Fond_ecran_Paysage.jpg');
+
+
     text-align: center;
+
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         color: white;
+        font-weight: bold;
+        margin-top: 2em;
     }
+}
+
+body {
+    background: url('http://iwallpapers2.free.fr/images/Paysages/Hiver/Glace_bleu_-_Fond_ecran_Paysage.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
