@@ -22,15 +22,16 @@ body {
     background: url('http://iwallpapers2.free.fr/images/Paysages/Hiver/Glace_bleu_-_Fond_ecran_Paysage.jpg');
     background-size: cover;
     background-attachment: fixed;
+    color: white;
 }
 
 .social-network {
     list-style: none;
-    > li {
+
+    >li {
         font-size: 3rem;
         display: inline;
     }
 }
-.fort{
-    
-}
+
+.fort {}

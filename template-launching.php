@@ -8,9 +8,6 @@ Template Post Type: post, page, product
 
 ?>
 
-<body>
-
-
 	<?php get_header("launching"); ?>
 
 
@@ -20,7 +17,6 @@ Template Post Type: post, page, product
 	$date_release=get_post_meta($id, 'date_release')[0];
     $dtz = new DateTimeZone("Europe/Paris"); //Your timezone
     $start = new DateTime( 'now', new DateTimeZone('Europe/Paris'));
-    var_dump($start);
     echo $date_release;
     $end = new DateTime($date_release);
     $duration = $end->Diff($start);
@@ -56,7 +52,7 @@ Template Post Type: post, page, product
 		  <span aria-hidden="true">&times;</span>
 		</button>
 	</div>
-		<form action="." method="post">
+		<form id="formsavemail" action="." method="post">
       		<div class="modal-body">
 				<input type="email" name="email" id="email" placeholder="votre email ici">
 		   	</div>
@@ -100,6 +96,3 @@ Template Post Type: post, page, product
 <?php
 get_footer("launching");
 ?>
-</body>
-</html>
-<?php

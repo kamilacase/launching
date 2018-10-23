@@ -1,25 +1,20 @@
-// var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+$(document).ready(function () {
+    $('#formsavemail').submit(function (event) {
+        event.preventDefault();
+        var email = $('#email').val();
 
-// var x = setInterval(function () {
+        $.ajax({
+            method: "POST",
+            url: "http://launching/",
+            data: {
+                zero_newsletter_email: email
+            }
+        }).done(function (msg) {
 
+            $('#exampleModal').modal('hide');
 
-//     var now = new Date().getTime();
+            console.log('ddddd');
 
-//     var distance = countDownDate - now;
-
-//     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//     document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
-//         minutes + "m " + seconds + "s ";
-
-
-//     if (distance < 0) {
-//         clearInterval(x);
-//         document.getElementById("countdown").innerHTML = "EXPIRED";
-//     }
-// }, 1000);
-
-console.log("prout")
+        })
+    });
+});
